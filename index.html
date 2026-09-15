@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Untuk Renaa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+
+    <!-- PARTICLES -->
+    <div class="particles">
+        <span>🤍</span>
+        <span>✨</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>🤍</span>
+    </div>
+
+
+    <!-- CONTAINER -->
+    <main class="container">
+
+
+        <!-- ===================== -->
+        <!-- SLIDE 1 -->
+        <!-- ===================== -->
+
+        <section class="slide active" id="slide1">
+
+            <div class="envelope">
+
+                <div class="heart">🤍</div>
+
+                <h1>Ada sesuatu...</h1>
+
+                <p>
+                    seseorang ingin menyampaikan sesuatu untukmu.
+                </p>
+
+                <button onclick="openLetter()" class="main-btn">
+
+                    Bukaa yaa ren
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ===================== -->
+        <!-- SLIDE 2 -->
+        <!-- ===================== -->
+
+        <section class="slide" id="slide2">
+
+            <div class="letter-container">
+
+                <div class="letter">
+
+                    <div class="letter-top">
+
+                        <span>💌</span>
+
+                        <p>Untuk kamu...</p>
+
+                    </div>
+
+
+                    <div class="letter-content">
+
+    <h2>Haii, Renaa! 👋🏻</h2>
+
+    <p>
+        Hahaha, sorry banget yaa harus nyampeinnya lewat cara yang mungkin
+        agak random kayak gini. But honestly, there’s something I’ve been
+        wanting to say for quite some time.
+    </p>
+
+    <p>
+        Kayaknya... <strong>aku suka sama kamu deh sejak awal kita ketemu.</strong>
+        Hahaha.
+    </p>
+
+    <p>
+        Tapi tenang aja, jangan langsung risih yaa 😭 Aku nggak bermaksud bikin
+        semuanya jadi awkward atau membuat kamu merasa nggak nyaman.
+        <em>I just wanted to be honest about what I feel.</em>
+    </p>
+
+    <p>
+        Maybe “suka” is a big word, so let's just say...
+        <strong>aku mengagumi kamu.</strong>
+        There's just something about you that caught my attention, dan somehow,
+        sejak saat itu aku jadi kepikiran kamu.
+    </p>
+
+    <p>
+        Lucunya, kalau dipikir-pikir, kita sebenarnya nggak sedekat itu.
+        Bahkan kayaknya eye contact kita cuma pernah sekali, dan percakapan kita
+        waktu itu juga cuma sebentar banget.
+    </p>
+
+    <p>
+        <em>
+            You probably don't even realize how someone could notice you
+            from such a small moment.
+        </em>
+    </p>
+
+    <p>
+        But yeah... sometimes, a small moment can leave a bigger impression
+        than we expect.
+    </p>
+
+    <p>
+        Oh iya, kamu nggak perlu bingung atau bahkan berusaha mencari tahu siapa
+        yang ngirim ini yaa HAHAHA. Maybe you already have a guess, maybe you
+        don't. And that's okay.
+    </p>
+
+    <p>
+        Aku cuma pengen kamu tahu kalau somewhere out there,
+        <strong>
+            there's someone who genuinely thinks you're interesting and quietly
+            cheers for you.
+        </strong>
+    </p>
+
+    <p>
+        No pressure, no expectations, and you don't have to feel anything back.
+        Aku cuma ingin menyampaikan ini sebelum kata-kata ini terlalu lama cuma
+        tersimpan di kepala.
+    </p>
+
+    <p>
+        And lastly...
+    </p>
+
+    <p>
+        <strong>
+            Semangat terus yaa buat kuliahnya! 🤍
+        </strong>
+    </p>
+
+    <p>
+        Jangan terlalu keras sama diri sendiri, jangan lupa istirahat,
+        and please keep going.
+    </p>
+
+    <p>
+        <em>
+            I'm sure you're capable of doing amazing things.
+        </em>
+    </p>
+
+    <p>
+        Take care, Renaa. 🤍
+    </p>
+
+
+    <div class="signature">
+
+        <p>
+            <em>
+                — From someone who probably noticed you more than you realized. ✨
+            </em>
+        </p>
+
+    </div>
+
+</div>
+
+
+                    <button onclick="goToReply()" class="next-btn">
+
+                        Ada yang ingin kamu katakan? →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ===================== -->
+        <!-- SLIDE 3 -->
+        <!-- ===================== -->
+
+        <section class="slide" id="slide3">
+
+            <div class="reply-card">
+
+                <div class="reply-icon">
+                    💬
+                </div>
+
+
+                <h1>Setelah membaca semuanya...</h1>
+
+
+                <p class="subtitle">
+
+                    Kalau kamu ingin mengatakan sesuatu,
+                    kamu bisa menuliskannya di sini.
+
+                </p>
+
+
+                <textarea
+                    id="replyMessage"
+                    placeholder="Tulis apa yang ingin kamu katakan..."
+                ></textarea>
+
+
+                <button onclick="sendReply()" class="send-btn">
+
+                    Kirim Pesan 🤍
+
+                </button>
+
+
+                <p id="statusMessage"></p>
+
+
+                <p class="anonymous-text">
+
+                    🔒 Identitasmu tidak akan ditampilkan.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================== -->
+        <!-- SUCCESS -->
+        <!-- ===================== -->
+
+        <section class="slide" id="slide4">
+
+            <div class="success-card">
+
+                <div class="success-icon">
+                    ✨
+                </div>
+
+
+                <h1>Pesanmu sudah sampai.</h1>
+
+
+                <p>
+
+                    Terima kasih karena sudah membalas surat ini.
+
+                </p>
+
+
+                <p class="small-text">
+
+                    Semoga harimu baik-baik saja 🤍
+
+                </p>
+
+
+                <div class="big-heart">
+
+                    🤍
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
